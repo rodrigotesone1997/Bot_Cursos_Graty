@@ -9,8 +9,11 @@ import pytz # Obtiene fecha y hora en distintos paises
 # Para obtenerlas se necesita tener una cuenta developer en twitter
 
 consumer_key=""
+
 consumer_secret=""
+
 access_token=""
+
 access_token_secret=""
 
 # Utilizo las llaves para autenticar los request y acceder a la api de twitter
@@ -21,7 +24,7 @@ api = tweepy.API(auth,wait_on_rate_limit=True)
 
 # El parametro define cuantos twetts van a leerse en la iteracion
 
-parametro=5
+parametro=10
 tweets_cargados=parametro+1
 
 # Abro el archivo "id.txt" y obtengo la primera linea que es el id del ultimo twitt que contenia las
@@ -56,26 +59,29 @@ for numero in range(parametro):
         url=""
 
     palabra_clave="CURSOS GRATY"
-
     if re.search(palabra_clave,tweet_actual) is not None :
         
         _id_viejo=ultimo_id
         _id_nuevo=_id_str
 
         if (_id_viejo != _id_nuevo ) and (url != ""):
+            with open(path,"w") as f:
+                f.write(_id_nuevo)
             api.update_status("Si queres que te avise cuando Agus publique \"CURSOS GRATY\" dame \"Follow\" y yo me voy a encargar de avisarte.",in_reply_to_status_id=_id,auto_populate_reply_metadata=True)
             
             dia=str(datetime.now(pytz.timezone('America/Buenos_Aires')).day)
             mes=str(datetime.now(pytz.timezone('America/Buenos_Aires')).month)
             screen_name = "BotFuturo"
-            for follower in api.followers(screen_name):
+            for follower in tweepy.Cursor(api.followers,screen_name).items():
                 text=f"Hola, el dia {dia}/{mes} @AgustinaLocke esta hablando de \"CURSOS GRATY\"\n¡Apurate a inscribirte!\n\nSi estas en el celular buscalo en su perfil.\nSi estas en una computadora entra al siguiente link:\n\n"+str(url)
-
-                direct_message=api.send_direct_message(follower._json["id"],text)
-                direct_message.message_create["message_data"]["text"]
-            api.retweet(int(_id_nuevo))
+                try:
+                    direct_message=api.send_direct_message(follower._json["id"],text)
+                    direct_message.message_create["message_data"]["text"]
+                except:
+                    pass
             
-            with open(path,"w") as f:
-                f.write(_id_nuevo)
+            api.retweet(_id)
+            break
+            
         else:
             pass
