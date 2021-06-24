@@ -9,8 +9,8 @@
 </p>
 
 > El repositorio consta de:
-> - Un script que es el codigo base del Bot.<br/>
-> - Un block de notas que se encarga de anotar el ID del ultimo tweet que dice **"CURSOS GRATY"**. <br/>
+> - Un script que es el código base del Bot.<br/>
+> - Un block de notas que se encarga de anotar el ID del último tweet que dice **"CURSOS GRATY"**. <br/>
 > El bot detecta la palabra "CURSOS GRATY" en los twetts de Agustina Loker y en caso de que aparezca esa palabra clave envia el siguiente [mensaje](Ejemplo_Bot_Mensaje.jpeg).
 
 
@@ -29,25 +29,25 @@ Python 3.8.5
 ```
 
 ## 👨‍💻 Instalación
-Ademas de los requerimientos que estan [aquí](requirements.txt) se necesita tener una [cuenta developer](https://developer.twitter.com/en/apply-for-access) en twitter que proporcione las llaves de acceso para utilizar el script.
-Mas informacion al respecto en https://developer.twitter.com/en/apply-for-access
+Además de los requerimientos que estan [aquí](requirements.txt) se necesita tener una [cuenta developer](https://developer.twitter.com/en/apply-for-access) en twitter que proporcione las llaves de acceso para utilizar el script.
+Mas información al respecto en https://developer.twitter.com/en/apply-for-access.
 
 ## ⚙️ Uso
 
 1. (Opcional) Crear un entorno virtual `virtualenv` y activarlo.
 2. Instalar las depedencias `pip install -r requirements.txt`
-3. Leer el codigo y ver los comentarios para ver su uso.
+3. Leer el código y ver los comentarios para ver su uso.
 4. Ejecutar
 
 ## 🤔 ⏰ ¿Como hago para que el bot este continuamente activado?
 
 #### 🪟 Usuarios Windows:
 
-Para usuarios Windows conviene ejecutar el script dentro del [Task Scheduler](https://www.jcchouinard.com/python-automation-using-task-scheduler/)
+Para usuarios Windows conviene ejecutar el script dentro del [Task Scheduler](https://www.jcchouinard.com/python-automation-using-task-scheduler/).
 
 #### 🐧 Usuarios Linux:
 
-Para usuarios Linux (yo particularmente uso la distribucion Ubuntu 20.04 pero supongo sera similar el proceso para otras distros) se recomienda utilizar [Crontab](https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804) con el siguiente comentado:
+Para usuarios Linux (yo particularmente uso la distribucion Ubuntu 20.04 pero supongo sera similar el proceso para otras distros) se recomienda utilizar [Crontab](https://www.digitalocean.com/community/tutorials/how-to-use-cron-to-automate-tasks-ubuntu-1804) con el siguiente comando:
 > crontab -e
 
 y luego utilizar:<br />
@@ -61,11 +61,11 @@ Tambien se puede poner en produccion el script en un servidor externo como por e
 - [PythonAnywhere](https://www.pythonanywhere.com/)
 - [Google Cloud](https://cloud.google.com/)
 
-Y muchos mas.
+Y muchos más.
 
 ## 🔮 Futuro del Proyecto
 
-Planeo publicar un script que utlize Selenium para automatizar la inscripcion a los cursos.
+Planeo publicar un script que utlize Selenium para automatizar la inscripción a los cursos.
 
 ## ✉️ Contacto
 
