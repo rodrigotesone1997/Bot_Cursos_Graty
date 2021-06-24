@@ -57,7 +57,7 @@ for numero in range(parametro):
 
     palabra_clave="CURSOS GRATY"
 
-    if str(re.search(palabra_clave,tweet_actual)) != "None" :
+    if re.search(palabra_clave,tweet_actual) is not None :
         
         _id_viejo=ultimo_id
         _id_nuevo=_id_str
