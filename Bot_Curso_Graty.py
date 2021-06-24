@@ -56,15 +56,14 @@ for numero in range(parametro):
         url=""
 
     palabra_clave="CURSOS GRATY"
-    print(tweet_actual)
-    print()
+
     if str(re.search(palabra_clave,tweet_actual)) != "None" :
         
         _id_viejo=ultimo_id
         _id_nuevo=_id_str
 
         if (_id_viejo != _id_nuevo ) and (url != ""):
-            #api.update_status("Si queres que te avise cuando Agus publique \"CURSOS GRATY\" dame \"Follow\" y yo me voy a encargar de avisarte.",in_reply_to_status_id=_id,auto_populate_reply_metadata=True)
+            api.update_status("Si queres que te avise cuando Agus publique \"CURSOS GRATY\" dame \"Follow\" y yo me voy a encargar de avisarte.",in_reply_to_status_id=_id,auto_populate_reply_metadata=True)
             
             dia=str(datetime.now(pytz.timezone('America/Buenos_Aires')).day)
             mes=str(datetime.now(pytz.timezone('America/Buenos_Aires')).month)
@@ -72,8 +71,9 @@ for numero in range(parametro):
             for follower in api.followers(screen_name):
                 text=f"Hola, el dia {dia}/{mes} @AgustinaLocke esta hablando de \"CURSOS GRATY\"\n¡Apurate a inscribirte!\n\nSi estas en el celular buscalo en su perfil.\nSi estas en una computadora entra al siguiente link:\n\n"+str(url)
 
-                #direct_message=api.send_direct_message(follower._json["id"],text)
-                #direct_message.message_create["message_data"]["text"]
+                direct_message=api.send_direct_message(follower._json["id"],text)
+                direct_message.message_create["message_data"]["text"]
+            api.retweet(int(_id_nuevo))
             
             with open(path,"w") as f:
                 f.write(_id_nuevo)
