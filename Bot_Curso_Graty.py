@@ -27,7 +27,7 @@ tweets_cargados=parametro+1
 # Abro el archivo "id.txt" y obtengo la primera linea que es el id del ultimo twitt que contenia las
 # palabras clave "CURSOS GRATY"
 
-path="/home/rodrigo/Bot_Curso_Graty/id.txt"
+path="path/id.txt"
 with open(path,"r") as f:
     lista_lineas=f.readlines()
 ultimo_id=lista_lineas[0].replace("\n","")
