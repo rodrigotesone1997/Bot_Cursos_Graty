@@ -10,7 +10,7 @@
 
 > El repositorio consta de:
 > - Un script que es el codigo base del Bot.<br/>
-> - Un block de notas que se encarga de anotar el ID del ultimo tweet que dice **"CURSOS GRATY"** <br/>
+> - Un block de notas que se encarga de anotar el ID del ultimo tweet que dice **"CURSOS GRATY"**. <br/>
 > El bot detecta la palabra "CURSOS GRATY" en los twetts de Agustina Loker y en caso de que aparezca esa palabra clave envia el siguiente [mensaje](Ejemplo_Bot_Mensaje.jpeg).
 
 
