@@ -68,7 +68,7 @@ for numero in range(parametro):
             with open(path,"w") as f:
                 f.write(_id_nuevo)
             api.update_status("Si queres que te avise cuando Agus publique \"CURSOS GRATY\" dame \"Follow\" y yo me voy a encargar de avisarte.",in_reply_to_status_id=_id,auto_populate_reply_metadata=True)
-            
+            api.retweet(_id)
             dia=str(datetime.now(pytz.timezone('America/Buenos_Aires')).day)
             mes=str(datetime.now(pytz.timezone('America/Buenos_Aires')).month)
             screen_name = "BotFuturo"
@@ -80,7 +80,6 @@ for numero in range(parametro):
                 except:
                     pass
             
-            api.retweet(_id)
             break
             
         else:
