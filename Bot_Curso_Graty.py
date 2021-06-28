@@ -36,14 +36,16 @@ with open(path,"r") as f:
 ultimo_id=lista_lineas[0].replace("\n","")
 
 # =============================================================================
-# Obtengo el id, el url y el texto de los ultimos 5 twetts en cada iteracion
-# Si la palabra clave se encuentra en el tweet comparo el id de ese twett con el ultimo id registrado
+# Obtengo el id, el url y el texto de los ultimos 5 twetts en cada iteracion.
+# Si la palabra clave se encuentra en el tweet comparo el id de ese twett con el ultimo id registrado.
 # En caso de ser iguales significa que el bot ya notifico del twett y si no son iguales significa que es
-# una nueva publicacion que contiene la palabra clave
+# una nueva publicacion que contiene la palabra clave.
 # Al mismo tiempo se exige que el url sea no nulo ya que si ese fuera el caso se trataria de un retwett
-# de una publicacion que contiene la palabra clave y no una publicacion original
-# Si el twett cumple ambas condiciones envia un mensaje a todos los seguidores del bot avisando que hay
-# nuevos "CURSOS GRATY"
+# de una publicacion que contiene la palabra clave y no una publicacion original.
+# Si el twett cumple ambas condiciones se reescribe el id por el nuevo id, 
+# comenta la publicacion para publicitarse, retwitea la publicacion y envia un 
+# mensaje a todos los seguidores del bot avisando que hay
+# nuevos "CURSOS GRATY".
 # Por ultimo se abre "id.txt" y se escribe el id del ultimo twett con la palabra "CURSOS GRATY" para evitar
 # que el bot notifique 2 o mas veces la misma publicacion
 # =============================================================================
@@ -63,7 +65,7 @@ for numero in range(parametro):
         
         _id_viejo=ultimo_id
         _id_nuevo=_id_str
-
+        
         if (_id_viejo != _id_nuevo ) and (url != ""):
             with open(path,"w") as f:
                 f.write(_id_nuevo)
@@ -79,7 +81,6 @@ for numero in range(parametro):
                     direct_message.message_create["message_data"]["text"]
                 except:
                     pass
-            
             break
             
         else:
