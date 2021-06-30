@@ -43,7 +43,7 @@ Mas información al respecto en https://developer.twitter.com/en/apply-for-acces
 
 #### 🪟 Usuarios Windows:
 
-Para usuarios Windows conviene ejecutar el script dentro del [Task Scheduler](https://www.jcchouinard.com/python-automation-using-task-scheduler/).
+Para usuarios Windows conviene ejecutar el script dentro del [Task Scheduler](https://www.jcchouinard.com/python-automation-using-task-scheduler/) y ejecutar cada un minuto.
 
 #### 🐧 Usuarios Linux:
 
@@ -52,7 +52,7 @@ Para usuarios Linux (yo particularmente uso la distribucion Ubuntu 20.04 pero su
 
 y luego utilizar:<br />
 
-> \*/2 \* \* \* \* python3 /path/script/Bot_Curso_Graty.py
+> \* \* \* \* \* python3 /path/script/Bot_Curso_Graty.py
 
 #### ☁️ Otras practicas:
 
