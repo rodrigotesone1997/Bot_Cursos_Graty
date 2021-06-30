@@ -8,13 +8,13 @@ import pytz # Obtiene fecha y hora en distintos paises
 # Declaro como strings todas las llaves necesarias para interactuar con la apí de twitter
 # Para obtenerlas se necesita tener una cuenta developer en twitter
 
-consumer_key="rRBppGEVNjdxqHu7oYtHcSWIA"
+consumer_key=""
 
-consumer_secret="lVc5ubzGIcLNBvd48IXjmycHs2h9TdaLuTCNBv4xIpcqtMr2QV"
+consumer_secret=""
 
-access_token="1350206898193227779-VPfH4J5oCbOODesQuVTLKF2v3xwNeX"
+access_token=""
 
-access_token_secret="l1MW6PlUtTimfXoWz0PJtM3jdFLx8gE8ItDkYjbpLHcdy"
+access_token_secret=""
 
 # Utilizo las llaves para autenticar los request y acceder a la api de twitter
 
@@ -30,7 +30,7 @@ tweets_cargados=parametro+1
 # Abro el archivo "id.txt" y obtengo la primera linea que es el id del ultimo twitt que contenia las
 # palabras clave "CURSOS GRATY"
 
-path="/home/rodrigo/Bot_Curso_Graty/id.txt"
+path="path/id.txt"
 with open(path,"r") as f:
     lista_lineas=f.readlines()
 ultimo_id=lista_lineas[0].replace("\n","")
