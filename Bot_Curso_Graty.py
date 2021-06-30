@@ -8,13 +8,13 @@ import pytz # Obtiene fecha y hora en distintos paises
 # Declaro como strings todas las llaves necesarias para interactuar con la apí de twitter
 # Para obtenerlas se necesita tener una cuenta developer en twitter
 
-consumer_key=""
+consumer_key="rRBppGEVNjdxqHu7oYtHcSWIA"
 
-consumer_secret=""
+consumer_secret="lVc5ubzGIcLNBvd48IXjmycHs2h9TdaLuTCNBv4xIpcqtMr2QV"
 
-access_token=""
+access_token="1350206898193227779-VPfH4J5oCbOODesQuVTLKF2v3xwNeX"
 
-access_token_secret=""
+access_token_secret="l1MW6PlUtTimfXoWz0PJtM3jdFLx8gE8ItDkYjbpLHcdy"
 
 # Utilizo las llaves para autenticar los request y acceder a la api de twitter
 
@@ -30,7 +30,7 @@ tweets_cargados=parametro+1
 # Abro el archivo "id.txt" y obtengo la primera linea que es el id del ultimo twitt que contenia las
 # palabras clave "CURSOS GRATY"
 
-path="path/id.txt"
+path="/home/rodrigo/Bot_Curso_Graty/id.txt"
 with open(path,"r") as f:
     lista_lineas=f.readlines()
 ultimo_id=lista_lineas[0].replace("\n","")
@@ -69,12 +69,13 @@ for numero in range(parametro):
         if (_id_viejo != _id_nuevo ) and (url != ""):
             with open(path,"w") as f:
                 f.write(_id_nuevo)
-            api.update_status("Si queres que te avise cuando Agus publique \"CURSOS GRATY\" dame \"Follow\" y yo me voy a encargar de avisarte.",in_reply_to_status_id=_id,auto_populate_reply_metadata=True)
+            api.update_status("Si queres que te avise cuando Agus publique \"CURSOS GRATY\" dame \"Follow\" y yo me voy a encargar de avisarte.\nLee mi tweet fijado.",in_reply_to_status_id=_id,auto_populate_reply_metadata=True)
             api.retweet(_id)
             dia=str(datetime.now(pytz.timezone('America/Buenos_Aires')).day)
             mes=str(datetime.now(pytz.timezone('America/Buenos_Aires')).month)
             screen_name = "BotFuturo"
-            for follower in tweepy.Cursor(api.followers,screen_name).items():
+            cursor_followers=tweepy.Cursor(api.followers,screen_name).items()
+            for follower in cursor_followers:
                 text=f"Hola, el dia {dia}/{mes} @AgustinaLocke esta hablando de \"CURSOS GRATY\"\n¡Apurate a inscribirte!\n\nSi estas en el celular buscalo en su perfil.\nSi estas en una computadora entra al siguiente link:\n\n"+str(url)
                 try:
                     direct_message=api.send_direct_message(follower._json["id"],text)
