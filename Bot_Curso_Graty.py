@@ -4,6 +4,7 @@ import tweepy # Paquete para interactuar con la api de twitter
 import re # Paquete para utilizar expresiones regulares
 from datetime import datetime # Paquete para utilizar funciones de tiempo
 import pytz # Obtiene fecha y hora en distintos paises
+import time
 
 # Declaro como strings todas las llaves necesarias para interactuar con la apí de twitter
 # Para obtenerlas se necesita tener una cuenta developer en twitter
@@ -24,7 +25,7 @@ api = tweepy.API(auth,wait_on_rate_limit=True)
 
 # El parametro define cuantos twetts van a leerse en la iteracion
 
-parametro=10
+parametro=25
 tweets_cargados=parametro+1
 
 # Abro el archivo "id.txt" y obtengo la primera linea que es el id del ultimo twitt que contenia las
@@ -69,20 +70,21 @@ for numero in range(parametro):
         if (_id_viejo != _id_nuevo ) and (url != ""):
             with open(path,"w") as f:
                 f.write(_id_nuevo)
-            api.update_status("Si queres que te avise cuando Agus publique \"CURSOS GRATY\" dame \"Follow\" y yo me voy a encargar de avisarte.\nLee mi tweet fijado.",in_reply_to_status_id=_id,auto_populate_reply_metadata=True)
+            api.update_status("Si queres que te avise cuando Agus publique \"CURSOS GRATY\" dame \"Follow\",activa la campanita y yo me voy a encargar de avisarte.\nLee mi tweet fijado.",in_reply_to_status_id=_id,auto_populate_reply_metadata=True)
             api.retweet(_id)
             dia=str(datetime.now(pytz.timezone('America/Buenos_Aires')).day)
             mes=str(datetime.now(pytz.timezone('America/Buenos_Aires')).month)
             screen_name = "BotFuturo"
             cursor_followers=tweepy.Cursor(api.followers,screen_name).items()
             for follower in cursor_followers:
-                text=f"Hola, el dia {dia}/{mes} @AgustinaLocke esta hablando de \"CURSOS GRATY\"\n¡Apurate a inscribirte!\n\nSi estas en el celular buscalo en su perfil.\nSi estas en una computadora entra al siguiente link:\n\n"+str(url)
+                text=f"Hola, el dia {dia}/{mes} @AgustinaLocke esta hablando de \"CURSOS GRATY\"\n¡Apurate a inscribirte!\n\nRevisa su perfil."
                 try:
                     direct_message=api.send_direct_message(follower._json["id"],text)
                     direct_message.message_create["message_data"]["text"]
+                    time.sleep(2)
+                    
                 except:
                     pass
             break
-            
         else:
             pass
