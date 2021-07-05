@@ -12,6 +12,7 @@
 > - Un script que es el código base del Bot.<br/>
 > - Un block de notas que se encarga de anotar el ID del último tweet que dice **"CURSOS GRATY"**. <br/>
 > El bot detecta la palabra "CURSOS GRATY" en los twetts de Agustina Loker y en caso de que aparezca esa palabra clave envia el siguiente [mensaje](Ejemplo_Bot_Mensaje.jpeg).
+> - Las [claves de acceso](keys_bot_cursos_graty.json) para utilizar la api de twitter.
 
 
 ## 📂 Clonar Reposotorio
