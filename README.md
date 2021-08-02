@@ -9,17 +9,18 @@
 </p>
 
 > El repositorio consta de:
-> - Un script que es el código base del Bot.<br/>
+> - El script [app.py](app.py) que ejecuta las tareas para el funcionamiento del programa.<br/>
+> - 2 clases (una para las funcionalidades de [twitter](Bot/twitterbot.py) y otra para las funcionalidades de [telegram](Bot/telegrambot.py))
 > - Un block de notas que se encarga de anotar el ID del último tweet que dice **"CURSOS GRATY"**. <br/>
 > El bot detecta la palabra "CURSOS GRATY" en los twetts de Agustina Loker y en caso de que aparezca esa palabra clave envia el siguiente [mensaje](Ejemplo_Bot_Mensaje.jpeg).
-> - Las [claves de acceso](keys_bot_cursos_graty.json) para utilizar la api de twitter.
+> - Las [claves de acceso](keys.dat) para utilizar la api de twitter y telegram.
 
 
 ## 📂 Clonar Reposotorio
 
 ```
 
-git clone https://github.com/rodrigotesone1997/Bot_Curso_Graty.git
+git clone https://github.com/rodrigotesone1997/Bot_Cursos_Graty.git
 
 ```
 
@@ -38,7 +39,7 @@ Mas información al respecto en https://developer.twitter.com/en/apply-for-acces
 1. (Opcional) Crear un entorno virtual `virtualenv` y activarlo.
 2. Instalar las depedencias `pip install -r requirements.txt`
 3. Leer el código y ver los comentarios para ver su uso.
-4. Ejecutar
+4. Ejecutar [app.py](app.py)
 
 ## 🤔 ⏰ ¿Como hago para que el bot este continuamente activado?
 
@@ -53,7 +54,7 @@ Para usuarios Linux (yo particularmente uso la distribucion Ubuntu 20.04 pero su
 
 y luego utilizar:<br />
 
-> \* \* \* \* \* python3 /path/script/Bot_Curso_Graty.py
+> \* \* \* \* \* python3 /path/script/app.py
 
 #### ☁️ Otras practicas:
 
@@ -62,15 +63,17 @@ Tambien se puede poner en produccion el script en un servidor externo como por e
 - [PythonAnywhere](https://www.pythonanywhere.com/)
 - [Google Cloud](https://cloud.google.com/)
 
-Y muchos más.
+Y muchos más.</br>
+Yo tengo el bot corriendo en un maquina virtual en la plataforma [AWS](https://aws.amazon.com/)
 
 ## 🔮 Futuro del Proyecto
 
-Planeo publicar un script que utlize Selenium para automatizar la inscripción a los cursos.
+Planeo publicar un script que utlize Selenium para automatizar la inscripción a los cursos.</br>
+UPDATE: Ya que el navegador debe estar siempre activado y desbloquedo para poder hacer uso de este script perdi interes en desarrollar el proyecto. Tampoco encontre una API para poder inscribirse a cursos en bases de request.
 
 ## ✉️ Contacto
 
-Cualquier sugerencia de arquitectura de código,pregunta o problema enviar mail a rodrigotesone97@outlook.com.ar o a mi [twitter](https://twitter.com/rodrigotesone97?s=08)
+Cualquier sugerencia de arquitectura de código,pregunta o problema enviar mail a rodrigotesone97@outlook.com.ar o a mi [twitter](https://twitter.com/rodrigotesone97)
 
 ## 🤔 Autor
 
@@ -78,13 +81,21 @@ Cualquier sugerencia de arquitectura de código,pregunta o problema enviar mail 
 
 <!---* Website: xadec
 -->
-* Twitter: [@rodrigotesone97](https://twitter.com/rodrigotesone97?s=08)
+* Twitter: [@rodrigotesone97](https://twitter.com/rodrigotesone97)
 * Github: [rodrigotesone1997](https://github.com/rodrigotesone1997)
 <!---* LinkedIn: [@ff](https://linkedin.com/in/ff)
 -->
+
+👤 **Federico Locker**
+
+* Website: [https://fedeloker.com.ar](https://fedeloker.com.ar/?i=1)
+* Twitter: [@FedeLoker](https://twitter.com/FedeLoker)
+* Github: [FedeLoker](https://github.com/FedeLoker)
+* LinkedIn: [@fedeloker](https://www.linkedin.com/in/fedeloker/)
+
 ## 🤝 Contribuciones y Agradecimientos
 
-Agradezco a [Agustina Loker](https://twitter.com/AgustinaLocke) por su trabajo publicando los cursos y a mi hermana por la linda imagen del perfil de twitter.
+Agradezco a [Agustina Loker](https://twitter.com/AgustinaLocke) por su trabajo publicando los cursos, a Fede por sus idea del grupo de telegram y la arquitectura del codigo y a mi hermana por la linda imagen del perfil de twitter.
 
 ## 📝 Licencia
 
