@@ -54,7 +54,7 @@ Para usuarios Linux (yo particularmente uso la distribucion Ubuntu 20.04 pero su
 
 y luego utilizar:<br />
 
-> \* \* \* \* \* python3 /path/script/app.py
+> \* 8-23 \* \* \* python3 /path/script/app.py
 
 #### ☁️ Otras practicas:
 
