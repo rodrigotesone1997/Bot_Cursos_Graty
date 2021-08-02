@@ -86,7 +86,7 @@ Cualquier sugerencia de arquitectura de código,pregunta o problema enviar mail 
 <!---* LinkedIn: [@ff](https://linkedin.com/in/ff)
 -->
 
-👤 **Federico Locker**
+👤 **Federico Loker**
 
 * Website: [https://fedeloker.com.ar](https://fedeloker.com.ar/?i=1)
 * Twitter: [@FedeLoker](https://twitter.com/FedeLoker)
