@@ -5,13 +5,14 @@ if __name__ == "__main__":
     twbot = twitterbot()
     tgbot = telegrambot()
 
-    success = twbot.cargarLlaves("keys")
-    success = success and tgbot.cargarLlaves("keys")
-
+    success = twbot.cargarLlaves("Bot_Cursos_Graty/keys")
+    print(success)
+    success = success and tgbot.cargarLlaves("Bot_Cursos_Graty/keys")
+    print(success)
     if success:
 
         idCurso = twbot.hayCursos()
-
+        print(idCurso)
         if idCurso > 0:
             twbot.responderTweet(idCurso)
             twbot.retweetear(idCurso)
