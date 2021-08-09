@@ -12,7 +12,7 @@
 > - El script [app.py](app.py) que ejecuta las tareas para el funcionamiento del programa.<br/>
 > - 2 clases (una para las funcionalidades de [twitter](Bot/twitterbot.py) y otra para las funcionalidades de [telegram](Bot/telegrambot.py))
 > - Un block de notas que se encarga de anotar el ID del último tweet que dice **"CURSOS GRATY"**. <br/>
-> El bot detecta la palabra "CURSOS GRATY" en los twetts de Agustina Loker y en caso de que aparezca esa palabra clave envia el siguiente [mensaje](Ejemplo_Bot_Mensaje.jpeg).
+> El bot detecta la palabra "CURSOS GRATY" en los twetts de Agustina Loker y en caso de que aparezca esa palabra clave envia el siguiente [mensaje](Ejemplo_Bot_Mensaje.jpeg) a los ultimos 1000 seguidores del bot (twitter solo permite el envio de 1000 mensajes por dia).
 > - Las [claves de acceso](keys.dat) para utilizar la api de twitter y telegram.
 
 
