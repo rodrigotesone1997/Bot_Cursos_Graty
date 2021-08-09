@@ -75,16 +75,9 @@ UPDATE: Ya que el navegador debe estar siempre activado y desbloquedo para poder
 
 Cualquier sugerencia de arquitectura de código,pregunta o problema enviar mail a rodrigotesone97@outlook.com.ar o a mi [twitter](https://twitter.com/rodrigotesone97)
 
-## 🤔 Autor
+## 🤔 Autores
 
 👤 **Rodrigo Tesone**
-
-<!---* Website: xadec
--->
-* Twitter: [@rodrigotesone97](https://twitter.com/rodrigotesone97)
-* Github: [rodrigotesone1997](https://github.com/rodrigotesone1997)
-<!---* LinkedIn: [@ff](https://linkedin.com/in/ff)
--->
 
 👤 **Federico Loker**
 
@@ -92,6 +85,13 @@ Cualquier sugerencia de arquitectura de código,pregunta o problema enviar mail 
 * Twitter: [@FedeLoker](https://twitter.com/FedeLoker)
 * Github: [FedeLoker](https://github.com/FedeLoker)
 * LinkedIn: [@fedeloker](https://www.linkedin.com/in/fedeloker/)
+
+<!---* Website: xadec
+-->
+* Twitter: [@rodrigotesone97](https://twitter.com/rodrigotesone97)
+* Github: [rodrigotesone1997](https://github.com/rodrigotesone1997)
+<!---* LinkedIn: [@ff](https://linkedin.com/in/ff)
+-->
 
 ## 🤝 Contribuciones y Agradecimientos
 
