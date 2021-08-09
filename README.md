@@ -78,6 +78,12 @@ Cualquier sugerencia de arquitectura de código,pregunta o problema enviar mail 
 ## 🤔 Autores
 
 👤 **Rodrigo Tesone**
+<!---* Website: xadec
+-->
+* Twitter: [@rodrigotesone97](https://twitter.com/rodrigotesone97)
+* Github: [rodrigotesone1997](https://github.com/rodrigotesone1997)
+<!---* LinkedIn: [@ff](https://linkedin.com/in/ff)
+-->
 
 👤 **Federico Loker**
 
@@ -86,12 +92,6 @@ Cualquier sugerencia de arquitectura de código,pregunta o problema enviar mail 
 * Github: [FedeLoker](https://github.com/FedeLoker)
 * LinkedIn: [@fedeloker](https://www.linkedin.com/in/fedeloker/)
 
-<!---* Website: xadec
--->
-* Twitter: [@rodrigotesone97](https://twitter.com/rodrigotesone97)
-* Github: [rodrigotesone1997](https://github.com/rodrigotesone1997)
-<!---* LinkedIn: [@ff](https://linkedin.com/in/ff)
--->
 
 ## 🤝 Contribuciones y Agradecimientos
 
