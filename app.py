@@ -1,18 +1,20 @@
 from Bot.twitterbot import *
 from Bot.telegrambot import *
 
+# Las lineas comentadas son solo por si es necesario debugear
+
 if __name__ == "__main__":
     twbot = twitterbot()
     tgbot = telegrambot()
 
     success = twbot.cargarLlaves("Bot_Cursos_Graty/keys")
-    print(success)
+#    print(success)
     success = success and tgbot.cargarLlaves("Bot_Cursos_Graty/keys")
-    print(success)
+#    print(success)
     if success:
 
         idCurso = twbot.hayCursos()
-        print(idCurso)
+#        print(idCurso)
         if idCurso > 0:
             twbot.responderTweet(idCurso)
             twbot.retweetear(idCurso)
