@@ -54,7 +54,7 @@ Para usuarios Linux (yo particularmente uso la distribucion Ubuntu 20.04 pero su
 
 y luego utilizar:<br />
 
-> \* 8-23 \* \* \* python3 /path/script/app.py
+> \* \* \* \* \* python3 /path/script/app.py
 
 #### ☁️ Otras practicas:
 
@@ -85,12 +85,10 @@ Cualquier sugerencia de arquitectura de código,pregunta o problema enviar mail 
 * LinkedIn: [@fedeloker](https://www.linkedin.com/in/fedeloker/)
 
 👤 **Rodrigo Tesone**
-<!---* Website: xadec
--->
+
 * Twitter: [@rodrigotesone97](https://twitter.com/rodrigotesone97)
 * Github: [rodrigotesone1997](https://github.com/rodrigotesone1997)
-<!---* LinkedIn: [@ff](https://linkedin.com/in/ff)
--->
+* LinkedIn: [rodrigo-tesone](https://www.linkedin.com/in/rodrigo-tesone/)
 
 ## 🤝 Contribuciones y Agradecimientos
 
