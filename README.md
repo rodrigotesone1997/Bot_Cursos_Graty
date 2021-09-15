@@ -1,6 +1,6 @@
 <h1 align="center">Bienvenido 👋</h1>
 <p>
-  <a href="ss" target="_blank">
+  <a href="LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
   <a href="https://twitter.com/BotFuturo?s=08" target="_blank">
@@ -16,7 +16,7 @@
 > - Las [claves de acceso](keys.dat) para utilizar la api de twitter y telegram.
 
 
-## 📂 Clonar Reposotorio
+## 📂 Clonar Repositorio
 
 ```
 
@@ -31,6 +31,7 @@ Python 3.8.5
 ```
 
 ## 👨‍💻 Instalación
+
 Además de los requerimientos que estan [aquí](requirements.txt) se necesita tener una [cuenta developer](https://developer.twitter.com/en/apply-for-access) en twitter que proporcione las llaves de acceso para utilizar el script.
 Mas información al respecto en https://developer.twitter.com/en/apply-for-access.
 
@@ -69,7 +70,7 @@ Yo tengo el bot corriendo en un maquina virtual en la plataforma [AWS](https://a
 ## 🔮 Futuro del Proyecto
 
 Planeo publicar un script que utlize Selenium para automatizar la inscripción a los cursos.</br>
-UPDATE: Ya que el navegador debe estar siempre activado y desbloquedo para poder hacer uso de este script perdi interes en desarrollar el proyecto. Tampoco encontre una API para poder inscribirse a cursos en bases de request.
+UPDATE: Ya que el navegador debe estar siempre activado y desbloquedo para poder hacer uso de este script perdi interes en desarrollar el proyecto. Tampoco encontre una API para poder inscribirse a cursos en base a request.
 
 ## ✉️ Contacto
 
